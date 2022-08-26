@@ -4,7 +4,7 @@ from os.path import isfile, join
 from django.core.files.storage import FileSystemStorage
 from ftpserver import settings
 from zipfile import ZipFile
-from win10toast import ToastNotifier
+#from win10toast import ToastNotifier
 
 
 def token_generator():
@@ -32,6 +32,6 @@ def convert_to_zip(files):
     zipObj.close()
     return file_name+'.zip'
 
-def user_notify(notification, mssg):
-    toast = ToastNotifier()
-    toast.show_toast(notification,mssg,duration=20,icon_path="icon.ico")
+#def user_notify(notification, mssg):
+#    toast = ToastNotifier()
+#    toast.show_toast(notification,mssg,duration=20,icon_path="icon.ico")
